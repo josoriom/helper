@@ -9,7 +9,7 @@ class CardTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Table(children: [
-      for (int i = 0; i < 2; i++)
+      for (int i = 0; i < 3; i++)
         TableRow(children: [
           for (int j = 0; j < 2; j++)
             _SingleCard(

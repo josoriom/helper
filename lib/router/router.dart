@@ -12,34 +12,14 @@ class AppRoutes {
         screen: const MathMenuScreen(),
         icon: Icons.emoji_symbols_rounded),
     MenuOption(
-        route: 'speech_screen',
-        name: 'Speech',
-        screen: SpeechScreen(),
-        icon: Icons.phone_in_talk),
-    MenuOption(
         route: 'home_chem_screen',
         name: 'Regresión Exponencial',
         screen: const ChemMenuScreen(),
         icon: Icons.whatshot_outlined),
     MenuOption(
-        route: 'contacts_screen',
-        name: 'Agenda',
-        screen: ContactsScreen(),
-        icon: Icons.whatshot_outlined),
-    MenuOption(
-        route: 'contacts_create_screen',
-        name: 'Create Item',
-        screen: ContactsCreateScreen(),
-        icon: Icons.whatshot_outlined),
-    MenuOption(
-        route: 'contacts_display_screen',
-        name: 'Display Item',
-        screen: ContactsDisplayScreen(),
-        icon: Icons.whatshot_outlined),
-    MenuOption(
-        route: 'contacts_edit_screen',
-        name: 'Edit Item',
-        screen: ContactsEditScreen(),
+        route: 'chart_screen',
+        name: 'Grafica',
+        screen: ChartScreen(),
         icon: Icons.whatshot_outlined),
     MenuOption(
         route: 'agenda_screen',
@@ -76,6 +56,11 @@ class AppRoutes {
         name: 'Regresión Exponencial',
         screen: const ExponentialRegressionScreen(),
         icon: Icons.line_axis_outlined),
+    MenuOption(
+        route: 'python_screen',
+        name: 'Python',
+        screen: const PythonScreen(),
+        icon: Icons.code_outlined),
     MenuOption(
         route: 'table',
         name: 'Tabla periódica',

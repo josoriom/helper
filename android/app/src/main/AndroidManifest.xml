@@ -12,7 +12,7 @@
     </queries>
     <application
         android:label="Helper"
-        android:name="${applicationName}"
+        android:name="com.chaquo.python.android.PyApplication"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

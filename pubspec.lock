@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  chaquopy:
+    dependency: "direct main"
+    description:
+      name: chaquopy
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.14"
   characters:
     dependency: transitive
     description:
@@ -247,6 +254,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.2"
+  rich_text_controller:
+    dependency: "direct main"
+    description:
+      name: rich_text_controller
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.4.0"
   simple_gesture_detector:
     dependency: transitive
     description:

@@ -12,23 +12,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final speechProvider = Provider.of<SpeechProvider>(context, listen: false);
-    speechProvider.initSpeechState();
     final uiProvider = Provider.of<UiProvider>(context);
-    final contactsListProvider =
-        Provider.of<ContactsListProvider>(context, listen: false);
-    contactsListProvider.loadContacts();
     Offset position = uiProvider.getPosition;
     return Scaffold(
       body: Stack(children: [
         // Background
         const Background(),
         _HomeBody(),
-        SmartButton(
-            position: position,
-            contactsListProvider: contactsListProvider,
-            speechProvider: speechProvider,
-            uiProvider: uiProvider),
       ]),
       bottomNavigationBar: CustomBottomNavigationBar(),
     );
@@ -63,11 +53,25 @@ class _HomeBody extends StatelessWidget {
       'color': Colors.deepPurpleAccent
     },
     {
-      'route': 'contacts_screen',
-      'name': 'Contactos',
-      'screen': ContactsScreen(),
+      'route': 'chart_screen',
+      'name': 'Graficar',
+      'screen': ChartScreen(),
       'icon': Icons.perm_contact_cal_outlined,
       'color': const Color.fromARGB(255, 153, 38, 72)
+    },
+    {
+      'route': 'python_screen',
+      'name': 'Python',
+      'screen': PythonScreen(),
+      'icon': Icons.code_outlined,
+      'color': Color.fromARGB(255, 30, 175, 120)
+    },
+    {
+      'route': 'settings_screen',
+      'name': 'Configuraciones',
+      'screen': SettingsScreen(),
+      'icon': Icons.settings,
+      'color': Color.fromARGB(255, 226, 174, 31)
     }
   ];
 
